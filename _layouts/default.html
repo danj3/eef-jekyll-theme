@@ -9,6 +9,7 @@
     <meta name="theme-color" content="#1f2c34">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/eef.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/nav.css' | relative_url }}">
     <meta name="keywords" content="{{ page.seo_keywords | join: ", " }}" />
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/apple-icon-60x60.png">
@@ -23,29 +24,21 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
 
     {% include head-custom.html %}
   </head>
   <body>
     <a class="sr-only sr-only-focusable" href="#content">Skip to the content.</a>
 
-    <nav class="navbar navbar-expand-md box-shadow navbar-light py-3">
-      <a class="navbar-brand" href="/">
-        <img src="https://erlef.org/images/eef-header-logo.svg" style="max-height:50px;max-width:50px;" alt="EEF Logo" >
-        {{ site.title | default: site.github.repository_name }}
-      </a>
-
-      <ul class="navbar-nav navbar-right ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="https://erlef.org">Foundation Website</a>
-        </li>
-      </ul>
-    </nav>
-
+    {% include nav.html %}
+    
     <article id="content" class="site-content bg-brand">
       {{ content }}
     </article>
 
     {% include footer.html %}
+
+    <script src="{{ '/assets/js/nav.js' | relative_url }}"></script>
   </body>
 </html>

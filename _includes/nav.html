@@ -1,0 +1,48 @@
+<nav class="eef-nav">
+  <a class="eef-nav-brand" href="{{ '/' | relative_url }}">
+    <img src="https://erlef.org/images/eef-header-logo.svg" alt="EEF Logo">
+    {% if site.nav_logo_secondary %}
+      <img src="{{ site.nav_logo_secondary | relative_url }}" alt="">
+    {% endif %}
+    <p>{{ site.title | default: "" }}</p>
+  </a>
+
+  <button class="eef-nav-toggler" type="button" aria-label="Toggle navigation">
+    <span class="eef-nav-toggler-icon"></span>
+  </button>
+
+  <div class="eef-nav-collapse" id="navbarCollapse">
+    <ul class="eef-nav-list">
+      <li class="eef-nav-item"><a class="eef-nav-link" href="https://www.every.org/erlang-ecosystem-foundation-inc?theme_color=1b85cb&designation=home&utm_campaign=donate-link#/donate">Donate</a></li>
+      <li class="eef-nav-item"><a class="eef-nav-link" href="https://members.erlef.org/join-us">Join Us!</a></li>
+      <li class="eef-nav-item"><a class="eef-nav-link" href="{{ 'https://erlef.org/sponsors' }}">Sponsors</a></li>
+      <li class="eef-nav-item"><a class="eef-nav-link" href="{{ 'https://erlef.org/news/' }}">News</a></li>
+      <li class="eef-nav-item"><a class="eef-nav-link" href="{{ 'https://erlef.org/events/' }}">Events</a></li>
+
+      <li class="eef-nav-item eef-nav-dropdown">
+        <a class="eef-nav-link eef-nav-toggle" href="#">Resources</a>
+        <div class="eef-nav-dropdown-menu">
+	  <a class="eef-nav-dropdown-item" href="{{ 'https://erlef.org/wg/' | relative_url }}">Working Groups</a>
+          <a class="eef-nav-dropdown-item" href="{{ 'https://erlef.org/stipends/' | relative_url }}">Stipends</a>
+          <a class="eef-nav-dropdown-item" href="{{ 'https://erlef.org/fellows/' | relative_url }}">Fellows</a>
+          <a class="eef-nav-dropdown-item" href="{{ 'https://erlef.org/academic-papers/' | relative_url }}">Academic Papers</a>
+          <a class="eef-nav-dropdown-item" href="{{ 'https://erlef.org/affiliates/' | relative_url }}">Affiliates</a>
+          <a class="eef-nav-dropdown-item" href="{{ '/community/' | relative_url }}">Community</a>
+        </div>
+      </li>
+
+      <li class="eef-nav-item eef-nav-dropdown">
+        <a class="eef-nav-link eef-nav-toggle" href="#">About</a>
+        <div class="eef-nav-dropdown-menu">
+          <a class="eef-nav-dropdown-item" href="{{ 'https://erlef.org/board_members/' }}">Board Members</a>
+          <a class="eef-nav-dropdown-item" href="{{ 'https://erlef.org/public_records/' }}">Public Records</a>
+          <a class="eef-nav-dropdown-item" href="{{ 'https://erlef.org/contact/' }}">Contact</a>
+          <a class="eef-nav-dropdown-item" href="{{ 'https://erlef.org/bylaws/' }}">Bylaws</a>
+          <a class="eef-nav-dropdown-item" href="{{ 'https://erlef.org/faq/' }}">FAQ</a>
+        </div>
+      </li>
+
+      <li class="eef-nav-item"><a class="eef-nav-link" href="{{ 'https://erlef.org/login/init' }}">Log in</a></li>
+    </ul>
+  </div>
+</nav>
