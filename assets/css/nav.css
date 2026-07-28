@@ -10,7 +10,7 @@
 }
 
 .eef-nav-brand { display: flex; align-items: center; text-decoration: none; }
-.eef-nav-brand img { max-height: 40px; max-width: 100px; margin-right: 8px; }
+.eef-nav-brand img { max-height: 25px; max-width: 100px; margin-right: 8px; }
 .eef-nav-brand p {
     display: block;
     color: #222;

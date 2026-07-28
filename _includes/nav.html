@@ -4,7 +4,7 @@
     {% if site.nav_logo_secondary %}
       <img src="{{ site.nav_logo_secondary | relative_url }}" alt="">
     {% endif %}
-    <p>{{ site.title | default: "" }}</p>
+    <p>{{ site.short_title | default: site.title | default: "" }}</p>
   </a>
 
   <button class="eef-nav-toggler" type="button" aria-label="Toggle navigation">
