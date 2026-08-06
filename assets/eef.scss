@@ -2,8 +2,10 @@
 ---
 
 @import "_github_rouge";
-@import "_erlef_website.min";
+@import "all";
+@import "app";
 
 .text-balance {
   text-wrap: balance;
 }
+
